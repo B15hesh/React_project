@@ -3,13 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://B15hesh.github.io/React_project",
+  
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
   "devDependencies": {
     "autoprefixer": "^10.4.22",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.17",
     "vite": "^7.2.4"
